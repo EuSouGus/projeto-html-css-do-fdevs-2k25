@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Inter:wght@400;500&family=Orbitron:wght@600;700&family=Press+Start+2P&family=Rajdhani:wght@400;600&display=swap');
+
+:root {
+    /*Paleta de cores*/
+    --cor01: #027373;
+    --cor02: #038C7F;
+    --cor03: #ADD9D1;
+    --cor04: #D95252;
+    --cor05: #0D0D0D;
+    /*Fontes*/
+    --fonte01: 'Orbitron', sans-serif;
+    --fonte02: 'Rajdhani', sans-serif;
+    --fonte03: 'Inter', sans-serif;
+    --fonte04: 'Exo 2', sans-serif;
+    --fonte05: 'Press Start 2P', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--cor03);
+    color: var(--cor05);
+}
+
+nav {
+    background-color: var(--cor05);
+    padding: 10px;
+}
+
+nav > a {
+    font-family: var(--fonte01);
+    color: var(--cor03);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: var(--cor01);
+    border-radius: 5px;
+}
+
+section#sobre {
+    background-color: var(--cor02);
+    padding: 10px;
+}
+
+section#sobre > p {
+    background-color: var(--cor03);
+    font-family: var(--fonte03);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
