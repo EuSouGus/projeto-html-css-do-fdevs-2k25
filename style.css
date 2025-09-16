@@ -22,8 +22,13 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor03);
 }
 
 hr {
@@ -99,34 +104,44 @@ section > div {
 
 #sobre img {
     margin: 10px;
-
     width: 300%;
     border: 1px solid black;
 }
 
-#redes {
+.foto-projeto {
+    
+}
+
+#projetos {
     background-color: var(--cor04);
 }
 
-#redes h2 {
-    color: var(--cor01);
+#projetos h2 {
+    color: var(--cor03);
 }
 
-#links-redes > div {
+#links-projetos > div {
     display: flex;
     margin: 0 auto;
 }
 
-#redes > #links-redes > div > a {
+#projetos > #links-projetos > div > a {
     font-family: var(--fonte03);
     font-weight: bold;
     text-decoration: none;
+    max-height: 20px;
     color: var(--cor05);
     background-color: var(--cor01);
     padding: 10px;
 }
 
-#redes > #links-redes > div > a:hover {
+#projetos > #links-projetos > div > a:hover {
     background-color: var(--cor05);
     color: var(--cor01);
+}
+
+footer {
+    background-color: var(--cor04);
+    color: var(--cor03);
+    text-align: center;
 }
