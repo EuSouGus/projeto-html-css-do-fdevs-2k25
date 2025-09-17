@@ -9,7 +9,7 @@
     --cor03: #1E90FF;
     --cor04: #FF3864;
     --cor05: #E6E6E6;
-    /*Fontes*/
+    /*Fontes*/ 
     --fonte01: 'Press Start 2P', cursive;
     --fonte02: 'Orbitron', sans-serif;
     --fonte03: 'Rajdhani', sans-serif;
@@ -29,13 +29,6 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor01);
-}
-
-hr {
-    border: none;
-    height: 2px;
-    background-color: var(--cor05);
-    margin: 10px 30px;
 }
 
 header {
@@ -68,12 +61,18 @@ main > header {
 main > header > h1 {
     font-family: var(--fonte01);
     font-size: 3em;
-    color: var(--cor05);
+    color: var(--cor03);
 }
 
 main > header > p {
     font-family: var(--fonte03);
-    color: var(--cor04);
+    color: var(--cor02);
+}
+
+#main-container {
+    background-color: var(--cor05);
+    margin: 50px;
+    border-radius: 10px;
 }
 
 section {
@@ -86,15 +85,16 @@ section h2 {
     font-weight: bolder;
     font-size: 2em;
     text-decoration: underline;
-    color: var(--cor03);
+    color: var(--cor01);
     margin: 10px;
 }
 
 section p {
     font-family: var(--fonte03);
     font-size: 1.3em;
+    font-weight: 500;
     text-align: justify;
-    color: var(--cor05);
+    color: var(--cor01);
     padding: 10px;
     margin: 10px;
 }
@@ -111,35 +111,45 @@ section > div {
 }
 
 #projetos {
-    background-color: var(--cor04);
+    background-color: var(--cor01);
+    border-radius: 10px;
 }
 
 #projetos h2 {
-    color: var(--cor01);
+    color: var(--cor04);
 }
 
-#links-projetos > div {
+#projetos p {
+    color: var(--cor05);
+}
+
+#redes div {
     display: flex;
     margin: 0 auto;
 }
 
-#projetos > #links-projetos > div > a {
+.links-redes a {
     font-family: var(--fonte03);
     font-weight: bold;
     text-decoration: none;
-    border-radius: 10px;
-    color: var(--cor01);
-    background-color: var(--cor02);
+    color: var(--cor05);
+    border-radius: 5px;
+    background-color: var(--cor04);
     padding: 10px;
 }
 
-#projetos > #links-projetos > div > a:hover {
-    background-color: var(--cor03);
-    color: var(--cor05);
+.links-redes a:hover {
+    background-color: var(--cor02);
 }
 
 footer {
     background-color: var(--cor04);
     color: var(--cor01);
+    font-weight: bolder;
     text-align: center;
+    padding: 2px;
+}
+
+footer strong {
+    color: var(--cor05);
 }
