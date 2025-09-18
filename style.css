@@ -46,6 +46,7 @@ nav > a {
     color: var(--cor01);
     text-decoration: none;
     padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 nav > a:hover {
@@ -92,7 +93,7 @@ section h2 {
 section p {
     font-family: var(--fonte03);
     font-size: 1.3em;
-    font-weight: 500;
+    font-weight: normal;
     text-align: justify;
     color: var(--cor01);
     padding: 10px;
@@ -136,10 +137,12 @@ section > div {
     border-radius: 5px;
     background-color: var(--cor04);
     padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .links-redes a:hover {
     background-color: var(--cor02);
+    transform: translateY(-5px);
 }
 
 footer {
