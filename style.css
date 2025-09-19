@@ -46,12 +46,13 @@ nav > a {
     color: var(--cor01);
     text-decoration: none;
     padding: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav > a:hover {
     background-color: var(--cor02);
     color: var(--cor05);
+    box-shadow: 0px 0px 10px var(--cor02);
 }
 
 main > header {
@@ -114,6 +115,13 @@ section > div {
 #projetos {
     background-color: var(--cor01);
     border-radius: 10px;
+    transition: transform 0.3s ease, outline 0.3s ease, box-shadow 0.5s ease;
+}
+
+#projetos:hover {
+    transform: translateY(-3px);
+    outline: 2px solid var(--cor02);
+    box-shadow: 0px 5px 10px var(--cor02);
 }
 
 #projetos h2 {
