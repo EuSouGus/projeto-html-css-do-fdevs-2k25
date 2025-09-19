@@ -107,13 +107,28 @@ section > div {
     display: flex;
 }
 
-#sobre img {
-    margin: 10px;
-    width: 300%;
-    border: 1px solid black;
-    background-color: var(--cor05);
+.conteudo-responsivo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
+.conteudo-responsivo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .conteudo-responsivo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conteudo-responsivo img {
+    margin-top: 15px;
+  }
+}
+    
 #projetos {
     background-color: var(--cor01);
     border-radius: 10px;
