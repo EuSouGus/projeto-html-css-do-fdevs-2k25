@@ -95,7 +95,7 @@ section h2 {
 
 section p {
     font-family: var(--fonte03);
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: normal;
     text-align: justify;
     color: var(--cor01);
@@ -109,13 +109,12 @@ section > div {
 
 .conteudo-responsivo {
   display: flex;
-  gap: 20px;
-  align-items: center;
+  gap: 30px;
+  justify-content: center;
 }
 
 .conteudo-responsivo img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -130,14 +129,14 @@ section > div {
 }
     
 #projetos {
+    padding-bottom: 30px;
     background-color: var(--cor01);
     border-radius: 10px;
-    transition: transform 0.3s ease, outline 0.3s ease, box-shadow 0.5s ease;
+    transition: outline 0.3s ease, box-shadow 0.5s ease;
 }
 
 #projetos:hover {
-    transform: translateY(-3px);
-    outline: 2px solid var(--cor02);
+    outline: 3px solid var(--cor02);
     box-shadow: 0px 5px 10px var(--cor02);
 }
 
@@ -149,23 +148,68 @@ section > div {
     color: var(--cor05);
 }
 
-#redes div {
+#galeria-projetos {
     display: flex;
-    margin: 0 auto;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.links-redes a {
+#galeria-projetos img {
+    width: 530px; 
+    outline: 3px solid var(--cor05);
+    border-radius: 10px;
+    transition: outline 0.3s ease, box-shadow 0.3s ease;
+}
+
+#galeria-projetos img:hover {
+    outline: 4px solid var(--cor02);
+    box-shadow: 0px 5px 15px var(--cor02);
+}
+
+@media (max-width: 1215px) {
+    #galeria-projetos {
+        padding: 10px;
+    }
+
+    #galeria-projetos img {
+        width: 100%;
+    }
+
+    #galeria-projetos img:hover {
+    outline: 3px solid var(--cor02);
+}
+}
+
+
+
+#redes div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.links-redes img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.links-redes {
+    display: flex;
+    background-color: var(--cor04);
+    color: var(--cor05);
     font-family: var(--fonte03);
     font-weight: bold;
     text-decoration: none;
-    color: var(--cor05);
     border-radius: 5px;
-    background-color: var(--cor04);
     padding: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.links-redes a:hover {
+.links-redes:hover {
     background-color: var(--cor02);
     transform: translateY(-5px);
     box-shadow: 0px 3px 10px var(--cor02);
