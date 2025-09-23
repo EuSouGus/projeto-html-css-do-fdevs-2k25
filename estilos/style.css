@@ -211,7 +211,7 @@ section > div {
 }
 
 .rede-item iframe {
-    border: 1px solid var(--cor01);
+    border: none;
     border-radius: 10px;
     height: 400px;
     width: 300px;
