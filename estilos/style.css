@@ -64,11 +64,22 @@ main > header > h1 {
     font-family: var(--fonte01);
     font-size: 3em;
     color: var(--cor03);
+    text-shadow: 3px 3px 0px var(--cor02);
+    transition: transform 0.3s ease;
+}
+
+main > header > h1:hover {
+    transform: translateY(-2px);
+    color: var(--cor02);
+    text-shadow: 3px 3px 0px var(--cor03);
+    cursor: default;
 }
 
 main > header > p {
     font-family: var(--fonte03);
     color: var(--cor02);
+    font-size: 1.3em;
+    font-weight: 500;
 }
 
 #main-container {
@@ -132,10 +143,11 @@ section > div {
     padding-bottom: 30px;
     background-color: var(--cor01);
     border-radius: 10px;
-    transition: outline 0.3s ease, box-shadow 0.5s ease;
+    transition: transform 0.3s ease, outline 0.3s ease, box-shadow 0.5s ease;
 }
 
 #projetos:hover {
+    transform: translateY(-5px);
     outline: 3px solid var(--cor02);
     box-shadow: 0px 5px 10px var(--cor02);
 }
@@ -182,14 +194,37 @@ section > div {
 }
 }
 
-
-
-#redes div {
+.redes-conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
+    margin-bottom: 20px;
+}
+
+.rede-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: -10px;
+}
+
+.rede-item iframe {
+    border: 1px solid var(--cor01);
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    transition: outline 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rede-item iframe:hover {
+    outline: 3px solid var(--cor02);
+    box-shadow: 0px 5px 10px var(--cor02);
+}
+
+.rede-item a {
+    margin: -10px auto;
 }
 
 .links-redes img {
@@ -199,6 +234,8 @@ section > div {
 
 .links-redes {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor04);
     color: var(--cor05);
     font-family: var(--fonte03);
