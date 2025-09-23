@@ -204,10 +204,10 @@ section > div {
 }
 
 .rede-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: -10px;
 }
 
 .rede-item iframe {
@@ -215,6 +215,7 @@ section > div {
     border-radius: 10px;
     height: 400px;
     width: 300px;
+    z-index: 1;
     transition: outline 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -224,7 +225,11 @@ section > div {
 }
 
 .rede-item a {
-    margin: -10px auto;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .links-redes img {
@@ -248,7 +253,7 @@ section > div {
 
 .links-redes:hover {
     background-color: var(--cor02);
-    transform: translateY(-5px);
+    transform: translateX(-50%) translateY(-5px);
     box-shadow: 0px 3px 10px var(--cor02);
 }
 
