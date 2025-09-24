@@ -90,6 +90,62 @@ main > header > p {
     border-radius: 10px;
 }
 
+.habilidades {
+    width: 400px;
+    background-color: var();
+    color: var(--cor01);
+}
+
+.habilidades h3 {
+    font-family: var(--fonte02);
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.habilidades h4 {
+    font-family: var(--fonte05);
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.habilidades ul{
+    display: block;
+    width: 100px;
+    margin-left: 30px;
+    padding: 10px;
+    font-family: var(--fonte04);
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--cor01);
+}
+
+.habilidades li:hover {
+    font-family: var(--fonte05);
+    color: var(--cor02);
+    text-decoration: underline;
+}
+
+.habilidades .design {
+    list-style-type: '\1F4CD\00A0\00A0';
+}
+
+.habilidades .linguagens {
+    list-style-type: '\1F9E9\00A0\00A0';
+}
+
+@media (max-width: 900px) {
+    .conteudo-sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-sobre > img {
+        max-width: 500px;
+    }
+}
+
 section {
     padding: 10px;
     margin: 30px;
@@ -117,37 +173,15 @@ section p {
 section > div {
     display: flex;
 }
-
-.conteudo-responsivo {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.conteudo-responsivo img {
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  .conteudo-responsivo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .conteudo-responsivo img {
-    margin-top: 15px;
-  }
-}
     
 #projetos {
     padding-bottom: 30px;
     background-color: var(--cor01);
     border-radius: 10px;
-    transition: transform 0.3s ease, outline 0.3s ease, box-shadow 0.5s ease;
+    transition: outline 0.3s ease, box-shadow 0.5s ease;
 }
 
 #projetos:hover {
-    transform: translateY(-5px);
     outline: 3px solid var(--cor02);
     box-shadow: 0px 5px 10px var(--cor02);
 }
@@ -199,8 +233,8 @@ section > div {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
-    margin-bottom: 20px;
+    gap: 100px;
+    margin-bottom: 30px;
 }
 
 .rede-item {
