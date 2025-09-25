@@ -90,13 +90,29 @@ main > header > p {
     border-radius: 10px;
 }
 
+.conteudo-sobre img {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
 .habilidades {
-    width: 400px;
+    background-color: var(--cor01);
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
     background-color: var();
-    color: var(--cor01);
+    color: var(--cor05);
+    transition: box-shadow 0.3s ease, outiline 0.3s ease;
+}
+
+.habilidades:hover {
+    box-shadow: 0px 3px 10px var(--cor02);
+    outline: 2px solid var(--cor02);
 }
 
 .habilidades h3 {
+    color: var(--cor04);
     font-family: var(--fonte02);
     font-size: 1.2em;
     font-weight: bolder;
@@ -110,15 +126,13 @@ main > header > p {
     font-weight: lighter;
 }
 
-.habilidades ul{
-    display: block;
+.habilidades ul {
     width: 100px;
     margin-left: 30px;
     padding: 10px;
     font-family: var(--fonte04);
     font-size: 1em;
     font-weight: 500;
-    color: var(--cor01);
 }
 
 .habilidades li:hover {
@@ -135,7 +149,7 @@ main > header > p {
     list-style-type: '\1F9E9\00A0\00A0';
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .conteudo-sobre {
         display: flex;
         flex-direction: column;
