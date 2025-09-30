@@ -33,6 +33,11 @@ body {
 
 header {
     color: var(--cor04);
+    background: linear-gradient(--cor04);
+}
+
+header img {
+    width: 200px;
 }
 
 nav {
@@ -56,30 +61,34 @@ nav > a:hover {
 }
 
 main > header {
+    background-color: var(--cor05);
     text-align: center;
     padding: 20px;
 }
 
-main > header > h1 {
+main > header h1 {
+    width: 650px;
+    margin: auto;
     font-family: var(--fonte01);
     font-size: 3em;
     color: var(--cor03);
     text-shadow: 3px 3px 0px var(--cor02);
+    transform: translateY(-20px);
     transition: transform 0.3s ease;
 }
 
-main > header > h1:hover {
-    transform: translateY(-2px);
+main > header h1:hover {
+    transform: translateY(-25px);
     color: var(--cor02);
     text-shadow: 3px 3px 0px var(--cor03);
     cursor: default;
 }
 
-main > header > p {
+main > header p {
     font-family: var(--fonte03);
     color: var(--cor02);
     font-size: 1.3em;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 #main-container {
@@ -90,6 +99,23 @@ main > header > p {
     border-radius: 10px;
 }
 
+#sobre {
+    padding: 0;
+    padding-top: 10px;
+    margin: 30px;
+}
+
+.conteudo-sobre {
+    background-color: var(--cor01);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, outline 0.3s ease;
+}
+
+.conteudo-sobre:hover {
+    box-shadow: 0px 3px 10px var(--cor02);
+    outline: 2px solid var(--cor02);
+}
+
 .conteudo-sobre img {
     margin: 0 auto;
     width: 300px;
@@ -97,22 +123,14 @@ main > header > p {
 }
 
 .habilidades {
-    background-color: var(--cor01);
-    border-radius: 10px;
     padding: 10px;
     width: 200px;
-    background-color: var();
+    height: 250px;
     color: var(--cor05);
     transition: box-shadow 0.3s ease, outiline 0.3s ease;
 }
 
-.habilidades:hover {
-    box-shadow: 0px 3px 10px var(--cor02);
-    outline: 2px solid var(--cor02);
-}
-
 .habilidades h3 {
-    color: var(--cor04);
     font-family: var(--fonte02);
     font-size: 1.2em;
     font-weight: bolder;
