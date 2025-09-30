@@ -67,7 +67,7 @@ main > header {
 }
 
 main > header h1 {
-    width: 650px;
+    max-width: 650px;
     margin: auto;
     font-family: var(--fonte01);
     font-size: 3em;
