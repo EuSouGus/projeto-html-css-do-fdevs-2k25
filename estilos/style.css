@@ -141,7 +141,6 @@ main > header p {
 
 .habilidades {
     padding: 10px;
-    width: 200px;
     color: var(--cor05);
     cursor: default;
     transition: box-shadow 0.3s ease, outiline 0.3s ease;
