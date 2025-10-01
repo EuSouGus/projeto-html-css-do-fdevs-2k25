@@ -39,7 +39,7 @@ header {
 
 @media (max-width: 700px) {
     header {
-        background: url(../imagens/back-perfil-mobile.png) no-repeat;
+        background-attachment: url(../imagens/back-perfil-mobile.png) no-repeat;
         background-size: cover;
     }
 }
@@ -126,7 +126,7 @@ main > header p {
 
 @media (max-width: 700px) {
     .conteudo-sobre {
-        background: url(../imagens/habilidades-mobile.png) no-repeat;
+        background-attachment: url(../imagens/habilidades-mobile.png) no-repeat;
         background-size: contain;
         background-color: var(--cor01);
     }
