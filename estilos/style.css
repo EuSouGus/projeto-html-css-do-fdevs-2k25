@@ -1,7 +1,7 @@
 @charset "UTF-8";
-
+/*importando fontes do google*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;500&family=Share+Tech+Mono&family=Russo+One&display=swap');
-
+/*Utlizando váriaveis*/
 :root {
     /*Paleta de cores*/
     --cor01: #0A0F1F;
@@ -16,7 +16,7 @@
     --fonte04: 'Share Tech Mono', monospace;
     --fonte05: 'Russo One', sans-serif;
 }
-
+/*resetando as configurações padrão*/
 * {
     margin: 0;
     padding: 0;
@@ -30,13 +30,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor01);
 }
-
+/*Estilizando o cabeçalho*/
 header {
+    /*aplicando artes feitas no canva como background*/
     background: url(../imagens/back-perfil.png) no-repeat;
     background-size: contain;
     color: var(--cor04);
 }
-
+/*Usando @media para aplicar a responsividade do projeto. Poderia ter aplicado mobile first e breaking points... Mas iniciei o projeto antes de teminar os vídeos, só depois fui aprender essas técnicas kkkk. Mas prometo que vou melhorar nos próximos!*/
 @media (max-width: 700px) {
     header {
         background-image: url(../imagens/back-perfil-mobile.png);
@@ -71,7 +72,7 @@ nav > a:hover {
     color: var(--cor05);
     box-shadow: 0px 0px 10px var(--cor02);
 }
-
+/*Estilizando o corpo/conteúdo*/
 main > header {
     text-align: center;
     padding: 20px;
@@ -175,7 +176,8 @@ main > header p {
     color: var(--cor02);
     text-decoration: underline;
 }
-
+/*Aplicando icones nas listas usando o macete do guanabara
+'\codigo do emoji\ espaço em branco \ espaço em branco'*/
 .habilidades .design {
     list-style-type: '\1F4CD\00A0\00A0';
 }
